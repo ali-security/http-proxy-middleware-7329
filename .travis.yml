@@ -10,6 +10,6 @@ stages:
   - lint
   - test
 jobs:
-    include:
-      - stage: lint
-        script: yarn lint
+  include:
+    - stage: lint
+      script: yarn lint
