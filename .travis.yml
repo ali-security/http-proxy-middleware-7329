@@ -2,14 +2,14 @@ dist: bionic
 sudo: false
 language: node_js
 node_js:
-  - 'stable'
   - '12'
+  - '16'
   - '10'
 cache: yarn
 stages:
   - lint
   - test
 jobs:
-  include:
-    - stage: lint
-      script: yarn lint
+    include:
+      - stage: lint
+        script: yarn lint
